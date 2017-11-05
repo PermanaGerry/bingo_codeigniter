@@ -1,0 +1,65 @@
+*, *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table th,
+    table td {
+      text-align: center;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin: 5px;
+    }
+    table td {
+      cursor: pointer;
+    }
+    td.selected {
+        background-color: blue;
+        color: #fff;
+    }
+    thead {
+      border-bottom: 2px solid #999;
+    }
+    thead.fail,
+    thead.bingo {
+      border-color: #444;
+    }
+    thead.bingo th {
+        background-color: green;
+        color: #fff;
+    }
+    thead.fail th {
+      background-color: red;
+      color: #fff;
+    }
+    #status {
+      line-height: 1.2;
+      display: none;
+      padding: 10px;
+      margin: 10px;
+      background-color: red;
+      color: #fff;
+      text-align: center;
+    }
+    #status.bingo {
+      background-color: green;
+    }
+    #status.show {
+      display: block;
+    }
+    #page {
+      width: 300px;
+      margin: 2em auto;
+      display: block;
+    }
